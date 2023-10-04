@@ -278,6 +278,18 @@ td>img, button>img{
 .company-logo{
     margin-inline: 20px;
 }
+.box-on-top{
+    top: -5%;
+    left: 20%;
+    position: relative;
+    z-index: 1;
+    background-color: rgba(47, 128, 237, 1);
+    color: white;
+    width: fit-content;
+    padding-block: 3px;
+    padding-inline: 10px;
+    border-radius: 10px;
+}
 @media screen and (max-width:520px) {
     .navbar,.hero,.box-1,.cards, .reviews{
         flex-direction: column;
@@ -301,5 +313,8 @@ td>img, button>img{
     }
     .reviews-col{
         flex-direction: row;
+    }
+    .box-on-top{
+        display: none;
     }
 }
